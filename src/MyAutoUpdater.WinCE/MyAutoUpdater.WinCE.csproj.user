@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DeployDeviceID>81551346-886F-43a2-B707-A91FAE1B33A7</DeployDeviceID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>"同创云PDA检票系统" "5.0.0.1806201" "http://tcy.uu163.net/static/Updater/Get?merId=55b0c598-8425-48bd-9dc9-7fbf02091208&amp;type=PDA&amp;name=WinCE" "\Program Files\UU163.QRCode.Client.WinCE\UU163.QRCode.Client.WinCE.Main.exe" "true"</StartArguments>
+  </PropertyGroup>
+</Project>
