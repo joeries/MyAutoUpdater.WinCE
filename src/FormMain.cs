@@ -46,7 +46,7 @@ namespace MyAutoUpdater
                     Logger.Log("WARN", "Non-existent of MainExePath", null);
                 }
             }
-            Application.Exit();
+            this.Close();
         }
 
         private void UpdateHelper_OnProgress(ProgressEventArgs e)
@@ -54,13 +54,13 @@ namespace MyAutoUpdater
             this.Invoke(new Action(() =>
             {
                 progressUpdate.Value = e.Percent;
-                buttonUpdate.Text = e.Desc;                
-            }));
+                buttonUpdate.Text = e.Desc;
 
-            if (e.Code == "Finished")
-            {
-                UpdateHelper_OnEnd(null, e.NoRun);
-            }
+                if (e.Code == "Finished")
+                {
+                    UpdateHelper_OnEnd(null, e.NoRun);
+                }        
+            }));
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
