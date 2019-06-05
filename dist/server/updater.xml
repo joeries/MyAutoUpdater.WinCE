@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <version>1.5.2.123</version>
+    <url>http://www.demo.com/updater.zip</url>
+    <changelog>http://www.demo.com/updater.txt</changelog>
+    <mandatory>true</mandatory>
+</item>
